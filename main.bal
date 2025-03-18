@@ -1,4 +1,5 @@
 import ballerina/http;
+import ballerina/log;
 
 type Order readonly & record {| 
     string orderId;
@@ -19,6 +20,7 @@ service / on new http:Listener(9090) {
     }
 
     resource function post orders(Order orderItem) returns Order {
+        log:printInfo("Adding order:", id = orderItem.orderId);
         orders.add(orderItem);
         return orderItem;
     }
