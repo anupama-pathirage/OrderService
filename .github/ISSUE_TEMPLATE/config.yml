@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+- name: '📚 Create an Issue'
+  about: Create an issue if something does not work as expected or suggest new functionality/improvements.
+  url: https://github.com/wso2/product-ballerina-integrator/issues/new/choose
